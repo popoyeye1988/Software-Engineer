@@ -1,37 +1,33 @@
 <html>
+<head>
+<meta charset="utf-8">
+<link href="firststyle.css" rel="stylesheet" type="text/css">
+<title>Yi Ke's Corpus Linguistics Lab</title>
+</head>
+
 <body>
-HELLO WORLD, You Rock!
- 
- <h1>
-  Software Engineer
-</h1>
- <ul>
-  <li>Collaborating most of the time instead of working solo</li>
-  <li>Collaborating with all different types of people</li>
-  <li>Soft skills are as important or even more important than technical skills</li>
-  <li>You can be my authentic self and be a successful engineer </li>
-  <li>Just be yourself and anyone can be a software engineer</li>
-  <li>Being able to explore all the different things you can do</li>
+<img src="sunset.png" width="900" height="170" alt=""/>
+<h1>Welcome! Feel free to use any of these tools. </h1>
+<p>All the tools are unicode compliant. For Chinese and Japanese, use the word segmenters first as necessary. 
+This website is adopted from Dr. Fukada's Model. </p>
+<ul>
+  <li><a href="http://telldev.cla.purdue.edu/jwordsegmenter.php" target="_blank">Online Japanese word segmenter</a></li>
+  <li><a href="http://textanalysisonline.com/chinese-word-segmenter" target="_blank">Online Chinese word segmenter</a> (outside site)</li>
+  <li><a href="http://web.ics.purdue.edu/~yi47/f18.html">Character frequency</a></li>
+  <li><a href="http://web.ics.purdue.edu/~yi47/f19.html" target="_blank">Word frequency</a></li>
+  <li><a href="http://web.ics.purdue.edu/~yi47/f22.html"_blank">N-gram generator</a></li>
+  <li><a href="http://web.ics.purdue.edu/~yi47/f20.html" target="_blank">Type/token ratio calculator</a></li>
+  <li><a href="kwic-3.html" target="_blank">KWIC concordance</a></li>
 </ul>
 
-<table style="width:100%">
-  <tr>
-    <th>Syllabus</th>
-    <th>Video</th>
-    <th>Both</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-</table>
-  
+<hr>
+<p>
+<?php
+$cnt = file_get_contents("labhomecnt.txt");
+$cnt++;
+file_put_contents("labhomecnt.txt",$cnt);
+echo "You are visitor No. $cnt.";
+?>
+</p>
 </body>
 </html>
-
